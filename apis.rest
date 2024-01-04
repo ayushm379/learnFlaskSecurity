@@ -1,0 +1,32 @@
+### Register User ###
+POST http://127.0.0.1:5000/auth/register
+content-type: application/json
+
+{
+    "username": "at",
+    "email": "ayushtewari379@gmail.com",
+    "password": "abc"
+}
+
+### Login User ###
+POST http://127.0.0.1:5000/auth/login
+content-type: application/json
+
+{
+    "username": "at",
+    "password": "abc"
+}
+
+### Get All User ###
+GET http://127.0.0.1:5000/user/all?page=1&per_page=2
+Authorization: Bearer eyJhbGciOiJIUzI1iIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwNDM3NzUxOCwianRpIjoiNjliMjI2ZmMtMjAxZS00OWI1LTgxNTktYjc5NTMwZTJlYmZmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImF0IiwibmJmIjoxNzA0Mzc3NTE4LCJjc3JmIjoiMDJhYWE5YTItMWVjMC00OWIwLWFiYjEtMjZhMWE5ODAzZDMzIiwiZXhwIjoxNzA0Mzc4NDE4fQ.H6t2qIFIxJnGWjfI
+
+
+### Who am I ###
+GET http://127.0.0.1:5000/auth/self
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwNDM4MDc4MiwianRpIjoiNWJiYjU2YTktNzNjZS00MmU4LTgxMGQtNWI3MDYwMjhjYzg2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImF0IiwibmJmIjoxNzA0MzgwNzgyLCJjc3JmIjoiYjgxZGM1ZDQtZTVkZi00M2Q2LTlmOGQtMzMxNWEwMzFkMjk5IiwiZXhwIjoxNzA0MzgxNjgyfQ.GEcr7KS6YapgzQA2xZOw68d9zZc3TU78hi23uGv-pUA
+
+### Refresh Token ###
+GET http://127.0.0.1:5000/auth/refresh
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwNDM4MTM5MSwianRpIjoiNjY0ZjU5NmQtNGIwZC00OWUxLWI3NmUtODhmY2U4ZmZmZGY5IiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJhdCIsIm5iZiI6MTcwNDM4MTM5MSwiY3NyZiI6IjNmYjMwNWVlLTllMzEtNDdhNS1iNGRiLWZmNzk4Mzk4YmJlZSIsImV4cCI6MTcwNjk3MzM5MX0.ifnwgkpDhFjTYHqZdd9wwN6I6D9dgRo2lkDdttFS3GQ
+
